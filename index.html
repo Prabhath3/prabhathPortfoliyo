@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of a Machine Learning Engineer and AI Architect.">
+    <title>Prabhath Neurals | AI & Machine Learning Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    
+
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <div class="bg-canvas" id="bg-canvas">
+        <div class="parallax-blob" id="blob1" style="top: 10%; left: -5%;"></div>
+        <div class="parallax-blob" id="blob2" style="bottom: 5%; right: -5%; animation-delay: -7s;"></div>
+    </div>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">PRABHATH<span>_NISH</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Specialization</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="menuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+            <div class="reveal">
+                <h1>Welcome to <br><span class="text-gradient typing-text" id="typewriter"></span></h1>
+                <p class="hero-desc">I design and deploy scalable machine learning systems, specializing in Computer Vision and Deep Learning research.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+            <div class="reveal profile-photo-container">
+                <img src="/assets/mine11.png" alt="Profile Photo" class="profile-photo">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="skills-grid">
+                <div class="reveal">
+                    <div class="section-title">
+                        <h2>My Story</h2>
+                        <h3>Data-Driven Problem Solving</h3>
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                        With over 5 years of experience in AI research, I bridge the gap between academic theory and production-ready software. My focus is on creating transparent, efficient, and ethical AI solutions.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">CUDA</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+                <div class="reveal card" style="text-align: center;">
+                    <div class="card-glow"></div>
+                    <i data-lucide="award" style="width: 48px; height: 48px; color: var(--primary); margin: 0 auto 1rem;"></i>
+                    <h4>Research Focus</h4>
+                    <p>Specialized in Transformer architectures and LLM fine-tuning for domain-specific applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Services</h2>
+                <h3>Core Expertise</h3>
+            </div>
+            <div class="grid">
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i data-lucide="brain"></i></div>
+                    <h4>NLP Systems</h4>
+                    <p>Implementation of custom RAG pipelines and language models for enterprise data analysis.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i data-lucide="scan-eye"></i></div>
+                    <h4>Computer Vision</h4>
+                    <p>State-of-the-art object detection, image segmentation, and OCR systems using CNNs.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i data-lucide="cpu"></i></div>
+                    <h4>MLOps</h4>
+                    <p>Building robust CI/CD pipelines for machine learning models to ensure seamless deployment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Portfolio</h2>
+                <h3>Selected Work</h3>
+            </div>
+            <div class="grid">
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="project-img"><i data-lucide="image" style="width: 40px; height: 40px;"></i></div>
+                    <h4>Vision Traffic Flow</h4>
+                    <p>A real-time monitoring system for urban traffic density using YOLOv8.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="project-img"><i data-lucide="file-text" style="width: 40px; height: 40px;"></i></div>
+                    <h4>Medical LLM</h4>
+                    <p>Fine-tuned Llama-3 model for summarizing complex clinical trials.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="project-img"><i data-lucide="bar-chart-4" style="width: 40px; height: 40px;"></i></div>
+                    <h4>Market Predictor</h4>
+                    <p>LSTM-based time-series forecasting for energy market volatility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="skills-grid">
+                <div class="reveal">
+                    <div class="section-title">
+                        <h2>Get In Touch</h2>
+                        <h3>Let's build something intelligent.</h3>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <i data-lucide="mail" style="color: var(--primary);"></i> contact@neural-lab.io
+                        </p>
+                        <p style="display: flex; align-items: center; gap: 10px;">
+                            <i data-lucide="github" style="color: var(--primary);"></i> github.com/neural-architect
+                        </p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="5" placeholder="Project details or collaboration ideas..." required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer;">
+                            Send Message <i data-lucide="send" style="width: 16px;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NeuralLab Portfolio. Developed with precision.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // 1. Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const h = document.documentElement, 
+                  b = document.body,
+                  st = 'scrollTop',
+                  sh = 'scrollHeight';
+            const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+            const progress = document.getElementById('scroll-progress');
+            if (progress) progress.style.width = percent + '%';
+        });
+
+        // 2. Background Neural Nodes Movement
+        const canvas = document.getElementById('bg-canvas');
+        const nodeCount = 30;
+        const nodes = [];
+
+        if (canvas) {
+            for (let i = 0; i < nodeCount; i++) {
+                const node = document.createElement('div');
+                node.className = 'neural-node';
+                
+                // Random properties
+                const data = {
+                    x: Math.random() * 100,
+                    y: Math.random() * 100,
+                    vx: (Math.random() - 0.5) * 0.05,
+                    vy: (Math.random() - 0.5) * 0.05,
+                    size: Math.random() * 3 + 1,
+                    opacity: Math.random() * 0.5 + 0.1
+                };
+                
+                node.style.left = data.x + '%';
+                node.style.top = data.y + '%';
+                node.style.width = data.size + 'px';
+                node.style.height = data.size + 'px';
+                node.style.opacity = data.opacity;
+                
+                canvas.appendChild(node);
+                nodes.push({ element: node, ...data });
+            }
+        }
+
+        function animateNodes() {
+            nodes.forEach(n => {
+                n.x += n.vx;
+                n.y += n.vy;
+
+                // Bounce off boundaries
+                if (n.x < 0 || n.x > 100) n.vx *= -1;
+                if (n.y < 0 || n.y > 100) n.vy *= -1;
+
+                n.element.style.left = n.x + '%';
+                n.element.style.top = n.y + '%';
+            });
+            requestAnimationFrame(animateNodes);
+        }
+        animateNodes();
+
+        // 3. Mouse Parallax for Blobs & Nodes
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.015;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.015;
+
+            const b1 = document.getElementById('blob1');
+            const b2 = document.getElementById('blob2');
+            if (b1) b1.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            if (b2) b2.style.transform = `translate(${-moveX}px, ${-moveY}px)`;
+            
+            // Subtle offset for nodes container
+            if (canvas) canvas.style.transform = `translate(${moveX * 0.5}px, ${moveY * 0.5}px)`;
+        });
+
+        // 4. Typewriter Effect
+        const words = ["My Neural World", "AI Solutions", "Machine Learning", "Deep Research"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typeTarget = document.getElementById('typewriter');
+
+        function type() {
+            if (!typeTarget) return;
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                charIndex--;
+            } else {
+                charIndex++;
+            }
+
+            typeTarget.textContent = currentWord.substring(0, charIndex);
+
+            let typeSpeed = isDeleting ? 50 : 150;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                typeSpeed = 2000;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+        type();
+
+        // 5. Card Mouse Tracking (Glow Effect)
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--x', `${x}px`);
+                card.style.setProperty('--y', `${y}px`);
+            });
+        });
+
+        // 6. Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                // Use a selector that targets either the original <i> or the transformed <svg>
+                const icon = menuBtn.querySelector('[data-lucide]');
+                if (icon) {
+                    const isOpened = navLinks.classList.contains('active');
+                    icon.setAttribute('data-lucide', isOpened ? 'x' : 'menu');
+                    lucide.createIcons();
+                }
+            });
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks) navLinks.classList.remove('active');
+                // Reset menu icon when navigation occurs
+                const icon = menuBtn ? menuBtn.querySelector('[data-lucide]') : null;
+                if (icon) {
+                    icon.setAttribute('data-lucide', 'menu');
+                    lucide.createIcons();
+                }
+            });
+        });
+
+        // 7. Reveal Animation on Scroll
+        const observerOptions = { threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // 8. Form Submission Simulation
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = e.target.querySelector('button');
+                const originalHTML = btn.innerHTML;
+                
+                btn.disabled = true;
+                btn.innerHTML = 'Sending...';
+                
+                setTimeout(() => {
+                    btn.innerHTML = 'Message Sent! <i data-lucide="check"></i>';
+                    lucide.createIcons();
+                    e.target.reset();
+                    setTimeout(() => {
+                        btn.disabled = false;
+                        btn.innerHTML = originalHTML;
+                        lucide.createIcons();
+                    }, 3000);
+                }, 1500);
+            });
+        }
+    </script>
+</body>
+</html>
